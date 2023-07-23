@@ -26,11 +26,31 @@
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+
+    <style>
+      .flex-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+
+      ul.grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .features-img {
+        width: 120px;
+      }
+
+      .integrations-img {
+        width: 200px;
+      }
+    </style>
   </head>
 
   <body>
     <div class="reveal">
-      <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
           <a href="https://www.atlassian.com/software/jira">
@@ -55,44 +75,68 @@
         </section>
 
         <section>
-          <h2>What is Jira Software?</h2>
-          <p>
+          <h3>What is Jira Software?</h3>
+          <p style="font-size: 30px">
             used by teams to plan, track, release and support world-class
             software with confidence.
           </p>
-          <p>
+          <p style="font-size: 30px">
             makes it easy for teams to move work forward, stay aligned, and
             communicate in context.
           </p>
+          <img
+            style="width: 850px"
+            src="https://wac-cdn.atlassian.com/dam/jcr:6da5a3d8-7b3d-48d3-b162-1f3b5811b14f/project-overview.png?cdnVersion=1127"
+            alt="projects jira"
+          />
         </section>
 
         <section>
           <h2>Who uses Jira Software?</h2>
-          <p style="font-size: 36px">
+          <p style="font-size: 30px">
             Jira Software launched in 2002 as an issue tracking and project
             management tool for teams. Since then, 65,000 companies globally
             have adopted Jira for its flexibility to support any type of project
             and extensibility to work with thousands of apps and integrations.
           </p>
-          <ul>
-            <li class="fragment" style="font-size: 30px">agile teams</li>
-            <li class="fragment" style="font-size: 30px">bug tracking teams</li>
-            <li class="fragment" style="font-size: 30px">devOps teams</li>
-            <li class="fragment" style="font-size: 30px">
-              product management teams
+          <ul class="grid-container">
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                src="https://wac-cdn.atlassian.com/dam/jcr:b1c1589e-e0b2-430a-827b-75627399e631/Agile.svg?cdnVersion=1127"
+              />
+              <span>agile teams</span>
             </li>
-            <li class="fragment" style="font-size: 30px">
-              project management teams
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                src="https://wac-cdn.atlassian.com/dam/jcr:d6747352-e3de-4e5b-973f-ade521b9edf6/Bug.svg?cdnVersion=1127"
+              />
+              <span>bug tracking teams</span>
             </li>
-            <li class="fragment" style="font-size: 30px">
-              software development teams
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                src="https://wac-cdn.atlassian.com/dam/jcr:fcc67819-296b-4f93-8161-d951aec69c85/Devops-spot.svg?cdnVersion=1127"
+              />
+              <span>devOps teams</span>
+            </li>
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                src="https://wac-cdn.atlassian.com/dam/jcr:99caf979-ee4a-4e01-982e-a0343c045a0d/Blueprint.svg?cdnVersion=1127"
+              />
+              <span>product management teams</span>
+            </li>
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                src="https://wac-cdn.atlassian.com/dam/jcr:279e7c4b-36cc-41a2-8194-571c1756c1b9/Complex%20window.svg?cdnVersion=1127"
+              />
+              <span>project management teams</span>
+            </li>
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                src="https://wac-cdn.atlassian.com/dam/jcr:7b9fbdba-166f-4a5a-a3fe-645e7f0b62db/View%20versions.svg?cdnVersion=1127"
+              />
+              <span>software development teams</span>
             </li>
           </ul>
-
-          <aside class="notes">
-            This slide has fragments which are also stepped through in the notes
-            window.
-          </aside>
         </section>
 
         <section>
@@ -104,11 +148,35 @@
             tools you need to estimate, report and measure velocity with
             workflows designed to fit your frameworks.
           </p>
-          <ul>
-            <li class="fragment" style="font-size: 30px">boards</li>
-            <li class="fragment" style="font-size: 30px">timeline</li>
-            <li class="fragment" style="font-size: 30px">insights</li>
-            <li class="fragment" style="font-size: 30px">integrations</li>
+          <ul class="grid-container">
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                class="features-img"
+                src="https://wac-cdn.atlassian.com/dam/jcr:7d0e6516-361d-4ec3-bd0f-22d7c7d105b4/illustrations-spot-JIRA%20Board.svg?cdnVersion=1127"
+              />
+              <span>boards</span>
+            </li>
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                class="features-img"
+                src="https://wac-cdn.atlassian.com/dam/jcr:e5a26303-dda2-49b3-a35d-05d54919886c/JSW-Guides-Homepage-.png?cdnVersion=1127"
+              />
+              <span>timeline</span>
+            </li>
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                class="features-img"
+                src="https://wac-cdn.atlassian.com/dam/jcr:2889e09a-2dbd-443d-8f8f-2c8c78036ca2/JSW-Guides-Homepage-Metrics.png?cdnVersion=1127"
+              />
+              <span>insights</span>
+            </li>
+            <li class="fragment flex-container" style="font-size: 30px">
+              <img
+                class="features-img"
+                src="https://wac-cdn.atlassian.com/dam/jcr:f99dda8a-5207-428b-a79b-737c8d271967/JSW-Guides-Homepage-Integrations.png?cdnVersion=1127"
+              />
+              <span>integrations</span>
+            </li>
           </ul>
         </section>
 
@@ -141,38 +209,76 @@
               A Jira project houses the collection of all issues that need to be
               completed to achieve a particular goal. A Jira board, on the other
               hand, is the tool used to manage those issues as they move from
-              creation to completion. Boards are flexible tools that can be used
-              variety of ways depending on the team’s unique way of working. For
-              example:
+              creation to completion.
             </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:0533e573-8382-48c4-bc60-41d32808b90b/Overview%20-%20swimlanes.png?cdnVersion=1127"
+              alt="board img"
+            />
+          </section>
+
+          <section>
+            <p style="font-size: 30px">
+              Boards are flexible tools that can be used variety of ways
+              depending on the team’s unique way of working. For example:
+            </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:ae0417a6-086a-4dd0-8108-0f08bf8eb491/boards-tutorials.png?cdnVersion=1127"
+              alt="board img"
+            />
+          </section>
+
+          <section>
             <p style="font-size: 30px">
               Teams that practice scrum use the board to display a prioritized
               selection of issues that the team has committed to complete within
               a sprint, or time-boxed period. Issues outside of this selection
               can be found in the backlog.
             </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:ecee47ba-4f87-4d2e-be40-d3ff8bdd21d3/Overview%20-%20scrum%20board.png?cdnVersion=1127"
+              alt="board img"
+            />
+          </section>
+
+          <section>
             <p style="font-size: 30px">
               Teams that practice kanban use the board as their work management
               tool for all issues, moving each issue through the columns from
               creation to completion.
             </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:e15fd66d-23a8-4872-ba60-40b08dfc0feb/Overview%20-%20kanban%20board.png?cdnVersion=1127"
+              alt="board img"
+            />
+          </section>
+
+          <section>
             <p style="font-size: 30px">
               Teams with larger projects or multiple workstreams use multiple or
               cross-project boards to more easily track and manage different
               types of work.
             </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:4c778645-1971-4801-b3e1-f971260c8529/Overivew%20-%20multiple%20boards%20and%20projects.png?cdnVersion=1127"
+              alt="board img"
+            />
           </section>
         </section>
 
         <section>
           <section>
             <h3>Timeline</h3>
-            <p>
+            <p style="font-size: 30px">
               The timeline is a planning view available in all Jira Software
               plans that allows you to plan work, track progress, and map
               dependencies within a single team and project. Both team-managed
               and company-managed projects are supported in the timeline view.
             </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:77edb9f4-138a-4959-8fbe-3db26f28a49c/create_timeline.png?cdnVersion=1127"
+              alt="timeline img"
+            />
           </section>
 
           <section>
@@ -229,7 +335,7 @@
         <section>
           <section>
             <h3>Insights</h3>
-            <p>
+            <p style="font-size: 32px">
               In Jira Software, insights help the team make data-driven
               decisions without leaving their current context. Insights source
               data from your Jira boards and projects to present aggregated
@@ -237,6 +343,12 @@
               available for scrum metrics in both company-managed and
               team-managed projects.
             </p>
+            <video controls style="width: 500px">
+              <source
+                src="https://wac-cdn-2.atlassian.com/video/upload/f_auto,q_auto/misc-assets/videos/platform/analytics-query.mp4"
+                type="video/mp4"
+              />
+            </video>
           </section>
 
           <section>
@@ -246,23 +358,36 @@
               driven decisions during sprint planning sessions and
               retrospectives all within the context of your backlog view.
             </p>
-            <ul>
-              <li class="fragment" style="font-size: 28px">
-                <strong>Commitment Insight.</strong> This insight monitors a
-                sprint’s workload based on the performance of the past five
-                sprints, and tells you whether your team has over or under
-                committed to work, based on the calculated target. This insight
-                is based off of the estimation setting that’s enabled for your
-                project.
-              </li>
-              <li class="fragment" style="font-size: 28px">
-                <strong>Issue Type Breakdown Insight.</strong> This insights
-                helps your team gain a better understanding of the different
-                types of work (for example, bugs, tasks, or tech-debt) your team
-                is taking on to make sure they are balancing out priorities that
-                are in line with their overall objectives.
-              </li>
-            </ul>
+          </section>
+
+          <section>
+            <p style="font-size: 32px">
+              <strong>Sprint Commitment Insight.</strong> This insight monitors
+              a sprint’s workload based on the performance of the past five
+              sprints, and tells you whether your team has over or under
+              committed to work, based on the calculated target. This insight is
+              based off of the estimation setting that’s enabled for your
+              project.
+            </p>
+            <img
+              src="https://images.ctfassets.net/zsv3d0ugroxu/2fFIAucR1APJxUnFc5TdPl/804faa15d1ef22ab20c2c720d5bc8a6f/Current_sprint__1_.png"
+              alt="insights img"
+              style="width: 550px"
+            />
+          </section>
+
+          <section>
+            <p style="font-size: 32px">
+              <strong>Issue Type Breakdown Insight.</strong> This insights helps
+              your team gain a better understanding of the different types of
+              work (for example, bugs, tasks, or tech-debt) your team is taking
+              on to make sure they are balancing out priorities that are in line
+              with their overall objectives.
+            </p>
+            <img
+              src="https://images.ctfassets.net/zsv3d0ugroxu/6FCIlMNm6rsEMKseOvObpN/47d02b2421a5e41fdda90049a56bc912/Issues_for_attention_screen_shot"
+              alt="insights img"
+            />
           </section>
 
           <section>
@@ -272,29 +397,50 @@
               data-driven decisions about the health and scope of your current
               sprint to ensure work stays on track.
             </p>
-            <ul>
-              <li class="fragment" style="font-size: 28px">
-                <strong>Sprint Progress Insight.</strong> The Sprint Progress
-                insight shows how the current sprint is pacing towards your
-                goal.
-              </li>
-              <li class="fragment" style="font-size: 28px">
-                <strong>Burndown Insight.</strong> Burndown Insight brings the
-                power of the burndown report directly into the context of your
-                sprints to help you make faster decisions and diagnose issues
-                without having to dive into your reports.
-              </li>
-              <li class="fragment" style="font-size: 28px">
-                <strong>Issues That Need Attention Insight.</strong> This
-                insight helps your team quickly see which issues are currently
-                stuck, blocked or flagged for attention.
-              </li>
-              <li class="fragment" style="font-size: 28px">
-                <strong>Epic Progress Insight.</strong> The epic progress
-                insight helps your team connect the work you’re doing in your
-                sprint to your larger epics.
-              </li>
-            </ul>
+          </section>
+
+          <section>
+            <p style="font-size: 32px">
+              <strong>Sprint Progress Insight.</strong> The Sprint Progress
+              insight shows how the current sprint is pacing towards your goal.
+            </p>
+            <img
+              src="https://images.ctfassets.net/zsv3d0ugroxu/1SJ2gTseEuD6jNrDHpvpHE/5d132bd312d3427d31c32a443200a707/Screen_Shot_2021-06-03_at_4.26.14_pm.png"
+            />
+          </section>
+
+          <section>
+            <p style="font-size: 32px">
+              <strong>Burndown Insight.</strong> Burndown Insight brings the
+              power of the burndown report directly into the context of your
+              sprints to help you make faster decisions and diagnose issues
+              without having to dive into your reports.
+            </p>
+            <img
+              src="https://images.ctfassets.net/zsv3d0ugroxu/3crXTHDiVuaXJ92zHvT3xq/4a448e10418ff81a4e9fc11d006e542e/Sprint_burndown_with_scope_changes"
+            />
+          </section>
+
+          <section>
+            <p style="font-size: 32px">
+              <strong>Issues That Need Attention Insight.</strong> This insight
+              helps your team quickly see which issues are currently stuck,
+              blocked or flagged for attention.
+            </p>
+            <img
+              src="https://images.ctfassets.net/zsv3d0ugroxu/NU7889QQRVFCj0T07I9n3/96479f5f23e627dfe3f04bded866a062/Screenshot-JSW-Issues-for-attention-CMP"
+            />
+          </section>
+
+          <section>
+            <p style="font-size: 32px">
+              <strong>Epic Progress Insight.</strong> The epic progress insight
+              helps your team connect the work you’re doing in your sprint to
+              your larger epics.
+            </p>
+            <img
+              src="https://images.ctfassets.net/zsv3d0ugroxu/4MpqrFm3hnOTTuIISpqFFX/d8b376c09f29b1a035a0ff9eff1eb4de/Screen_Shot_2021-08-06_at_2.19.48_pm.png"
+            />
           </section>
         </section>
 
@@ -309,18 +455,36 @@
               3,000 Jira Software apps that can be custom-tailored to fit any
               and every use case.
             </p>
+            <div class="flex-container" style="justify-content: center">
+              <img
+                class="integrations-img"
+                src="https://wac-cdn.atlassian.com/dam/jcr:41ae5850-5a4b-4e06-82b9-29271739f9ed/microsoft-logo.svg?cdnVersion=1127"
+              />
+              <img
+                class="integrations-img"
+                src="https://wac-cdn.atlassian.com/dam/jcr:d25dfbbb-086c-4b6a-ae34-c0506edc46e8/aws-logo.svg?cdnVersion=1127"
+              />
+              <img
+                class="integrations-img"
+                src="https://wac-cdn.atlassian.com/dam/jcr:748dfdab-734a-4702-b595-1ecdf5c06a22/google-logo.png?cdnVersion=1127"
+              />
+            </div>
           </section>
         </section>
 
         <section>
           <section>
             <h2>Get started in Jira Software</h2>
-            <p>
+            <p style="font-size: 30px">
               Jira is incredibly flexible and can be customized to work with
               your team’s unique workflow, meaning teams of all kinds can enjoy
               increased productivity and visibility as they march toward
               releasing amazing software.
             </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:275a1fc3-b799-4578-a9d2-d56e890978df/Views%20-%20list@2x.png?cdnVersion=1127"
+              style="width: 800px"
+            />
           </section>
 
           <section>
@@ -329,6 +493,10 @@
               Log into your Jira Software site. In the top navigation, select
               the “Projects” dropdown and select “Create project”.
             </p>
+            <img
+              src="https://confluence.atlassian.com/bitbucketserver086/files/1188782379/1188782398/1/1672808908855/Create+project2.png"
+              style="width: 550px"
+            />
           </section>
 
           <section>
@@ -338,12 +506,10 @@
               which is designed to get your team started quickly and
               successfully. Today, Jira Software offers three templates:
             </p>
-            <p style="font-size: 36px">
-              В шаблонах Scrum и Kanban вам также будет предложено выбрать тип
-              проекта. Принципиальное различие между этими двумя типами проектов
-              заключается в способе их администрирования и уровне управления (на
-              уровне команды либо компании/администратора Jira).
-            </p>
+            <img
+              src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2023/02/20171549/jira-templates.png"
+              style="width: 700px"
+            />
           </section>
 
           <section>
@@ -364,19 +530,31 @@
                 and prefer to manage development tasks and bugs in a list view.
               </li>
             </ul>
+            <p style="font-size: 30px">
+              For the scrum and kanban templates only, you will also be prompted
+              to choose a project type. The fundamental difference between the
+              two project types is how they are administered, and whether that
+              occurs at the team level or at a company/Jira admin level.
+            </p>
           </section>
 
           <section>
             <h3>Step 3 - Set up your columns</h3>
-            <p>
-              In Jira Software, the board displays a selection of issues in
-              columns, with each column representing a step in your team’s
-              workflow for taking work through completion. Although there are
-              many things you can configure on your board, we suggest just
-              setting up columns for now. When you're getting started on a new
-              Jira Software project, it's important to make your board reflect
-              the way your team works.
-            </p>
+            <div>
+              <img
+                src="https://wac-cdn.atlassian.com/dam/jcr:9edd91a0-c81d-4e03-8c75-78a07e50127c/JSW-Guides-7-Steps-IMG4.png?cdnVersion=1127"
+                style="width: 300px; float: left; padding-right: 40px"
+              />
+              <p style="font-size: 34px">
+                In Jira Software, the board displays a selection of issues in
+                columns, with each column representing a step in your team’s
+                workflow for taking work through completion. Although there are
+                many things you can configure on your board, we suggest just
+                setting up columns for now. When you're getting started on a new
+                Jira Software project, it's important to make your board reflect
+                the way your team works.
+              </p>
+            </div>
           </section>
 
           <section>
@@ -396,7 +574,70 @@
           </section>
 
           <section>
-            <h3>Step 5 - Connect your tools</h3>
+            <h3>Epics</h3>
+            <p>
+              Represents a larger body of work. Epics are often represented as a
+              collection of multiple issues. Example: Start a lemonade stand.
+            </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:9ad770b4-f380-40b8-a802-05abe4e4ebee/issue-hierarchy-v2.png?cdnVersion=1127"
+            />
+          </section>
+
+          <section>
+            <h3>Task</h3>
+            <p style="font-size: 34px">
+              Represents a task that needs to be done. Tasks are used as
+              ‘catch-alls’ and when the work cannot be accurately represented by
+              the other issue types. Example(s): Make lemonade. Create sign.
+              Set-up stand.
+            </p>
+            <img
+              style="width: 700px"
+              src="https://wac-cdn.atlassian.com/dam/jcr:7bfd86d8-7349-4250-967f-3685e0faf67e/Task%20tracking%20-%20List%20view@2x.png?cdnVersion=1127"
+            />
+          </section>
+
+          <section>
+            <h3>Story</h3>
+            <p>
+              Represents a requirement expressed from the perspective of the
+              user. Example: As a lemonade enthusiast, I’d like to have a really
+              cold, crisp drink.
+            </p>
+            <img
+              src="https://wac-cdn.atlassian.com/dam/jcr:c79bf6d8-3101-48c3-bf2b-506b5bc53ccc/Themes.png?cdnVersion=1127"
+            />
+          </section>
+
+          <section>
+            <h3>Bug</h3>
+            <p>
+              Represents a problem that needs to be fixed. Example: The lemonade
+              is too sour.
+            </p>
+            <img
+              style="width: 800px"
+              src="https://www.testingdocs.com/wp-content/uploads/Create-a-Bug-in-Jira-Software.png"
+            />
+          </section>
+
+          <section>
+            <h3>Step 5 - Create a sprint</h3>
+            <p style="font-size: 32px">
+              A sprint is a fixed time period where teams complete work from
+              their product backlog. Sprints are usually one, two, or four weeks
+              long. At the end of the sprint, a team will typically have built
+              and implemented a working product increment.
+            </p>
+            <img
+              style="width: 800px"
+              src="https://wac-cdn.atlassian.com/dam/jcr:178995c8-db60-4b0a-be01-889aafb96515/sprints_create-1.png?cdnVersion=1127"
+            />
+          </section>
+
+          <section>
+            <h3>Step 6 - Connect your tools</h3>
             <p>
               You and your teams can spend less time managing work and more time
               building great software with over 3,000 Jira Software apps that
@@ -405,20 +646,49 @@
           </section>
 
           <section>
-            <h3>Step 6 - Invite your team</h3>
+            <p>Install GitHub for Jira</p>
+            <p>
+              Go to the Atlassian Marketplace by selecting Apps → Explore more
+              apps in the top navigation.
+            </p>
+            <img
+              src="https://marketplace-cdn.atlassian.com/files/c0eacba6-b0d0-4ed9-b18e-0fa8e385615f"
+            />
+          </section>
+
+          <section>
+            <h3>Step 7 - planning</h3>
+            <p style="font-size: 32px">
+              The backlog view is a dedicated space for defining and
+              prioritizing work your team will take on now and into the future.
+              The backlog view lists issues that your team plans to work on (in
+              the Backlog or Sprint lists), as well as the issues currently on
+              your team’s board (in the Board list). You can use the backlog
+              issue list to plan work in advance so that your team members can
+              quickly jump on the most important tasks when they’re ready.
+            </p>
+            <img
+              src="https://confluence.atlassian.com/jirasoftwareserver/files/938845071/1141499159/1/1657814913404/Scrum_backlog.png"
+              alt="Step 7 img"
+              style="width: 800px"
+            />
+          </section>
+
+          <section>
+            <h3>Step 8 - Invite your team</h3>
             <p>
               It’s time to get the party started! Once you have enough work
               represented on your board, start inviting team members.
             </p>
             <img
               src="https://wac-cdn.atlassian.com/dam/jcr:9621f7a4-0968-457a-8965-debaf18d5121/JSW-Guides-7-Steps-IMG6.png?cdnVersion=1127"
-              alt="Step 6 img"
+              alt="Step 8 img"
               style="width: 750px"
             />
           </section>
 
           <section>
-            <h3>Step 7 - Move work forward</h3>
+            <h3>Step 9 - Move work forward</h3>
             <p style="font-size: 30px">
               Now that your team has joined your Jira Software site, you're
               ready to collaborate and track work together. If you're in a scrum
@@ -442,6 +712,10 @@
             world-class software with the number one project management tool for
             agile teams.
           </p>
+          <img
+            style="width: 750px"
+            src="https://wac-cdn.atlassian.com/dam/jcr:d30aee7b-5cf0-4431-ba29-2b1d4636083a/sprint.png?cdnVersion=1127"
+          />
         </section>
       </div>
     </div>
